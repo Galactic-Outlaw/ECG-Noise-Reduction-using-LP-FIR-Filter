@@ -1,0 +1,26 @@
+//Testbench for the low pass FIR filter:
+module tb1;
+reg [15:0]a[999:0];
+integer i;
+// Inputs
+reg Clk;
+reg [15:0] Xin;
+// Outputs
+wire [31:0] Yout;
+// Instantiate the Unit Under Test (UUT)
+fir_8tap LPF (Clk,Xin,Yout);
+//Generate a clock with 10 ns clock period.
+initial Clk = 0;
+always #5 Clk =~Clk;
+// reading ecg signals from binary.txt file ,here 100 samples of ecg signals are read
+initial
+ begin
+$readmemb("binary_ecg.txt",a);
+for (i=0; i<1000; i=i+1)
+begin
+Xin=a[i];#10;
+end
+end
+initial
+#10000 $stop;
+Endmodule
