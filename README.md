@@ -2,3 +2,5 @@
 Electrocardiogram (ECG) signal is a bio-electrical activity of the heart. It is a common routine and important cardiac diagnostic tool where in electrical signals are measured and recorded to know the functional status of heart, but ECG signal can be distorted with noise as, various artifacts corrupt the original ECG signal and reduces it quality Therefore, there is a need to remove such artifacts from the original signal and improve its quality for better interpretation. Digital filters are used to remove noise error from the low frequency ECG signal and improve the accuracy of the signal. Noise can be any interference due to motion artifacts or due to power equipment that are present where ECG has been taken. Thus, ECG signal processing has become a prevalent and effective tool for research and clinical practices.Low pass Filter can be used to remove such noise when the ecg signal has high frequency noise
 
 I am making edits to this readme file to verify git push
+
+This edit to create new branch and merge it to the main branch
